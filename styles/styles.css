@@ -1,0 +1,37 @@
+.slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__image {
+    width: 500px;
+    height: 300px;
+}
+
+.slider__line {
+    display: flex;
+    width: 1500px; /* зависит от колва картинок, тут 3 картинки по 500 = 3 * 500 = 1500 */
+    position: relative;
+    left: 0px;
+    transition: left 2s ease-in-out;
+}
+
+#next, #prev {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+
+}
+
+#next {
+    left: 450px;
+}
+
+
